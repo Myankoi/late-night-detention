@@ -1,0 +1,14 @@
+[remap]
+
+importer="aseprite_wizard.plugin.noop"
+type="PackedDataContainer"
+uid="uid://cm163ig7mj27k"
+path="res://.godot/imported/mc_backidle.aseprite-6a538190aa591c212003370f3709dded.res"
+
+[deps]
+
+source_file="res://chara/mc_backidle.aseprite"
+dest_files=["res://.godot/imported/mc_backidle.aseprite-6a538190aa591c212003370f3709dded.res"]
+
+[params]
+

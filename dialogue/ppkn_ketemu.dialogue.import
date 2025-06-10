@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://dykxekl8v4bvr"
+path="res://.godot/imported/ppkn_ketemu.dialogue-e001d197abddc27e80678f9e96aba41a.tres"
+
+[deps]
+
+source_file="res://dialogue/ppkn_ketemu.dialogue"
+dest_files=["res://.godot/imported/ppkn_ketemu.dialogue-e001d197abddc27e80678f9e96aba41a.tres"]
+
+[params]
+
+defaults=true

@@ -1,0 +1,13 @@
+~ start
+
+Anomali Hantu Yang Suka Mengenang Masa Lalu: S... siapa... kau?
+Anomali Hantu Yang Suka Mengenang Masa Lalu: Apa-apaan ini?! Kenapa... kenapa kau bisa melihatku?! Energi absurd macam apa ini?!
+Anomali Hantu Yang Suka Mengenang Masa Lalu: Biasanya, tidak ada yang bisa melihat ku, sejak aku meninggal karena overdosis belajar!
+Anomali Hantu Yang Suka Mengenang Masa Lalu: (mendesah pilu) Aku... aku mati dengan buku-buku di sekelilingku! Kini, jiwaku terpenjara, tak bisa lagi menyerap ilmu pengetahuan yang brutal dan tiada tara itu!
+Anomali Hantu Yang Suka Mengenang Masa Lalu: Tapi kau... kau punya potensi!
+Anomali Hantu Yang Suka Mengenang Masa Lalu: Jika kau masuk ruangan ini, bantu aku. Temukan "Pena Sejarah yang Hilang" di perpustakaan sekolah. Konon, pena itu bisa menyimpan memori dan informasi dari masa lalu.
+Anomali Hantu Yang Suka Mengenang Masa Lalu: Bawa pena itu padaku! Biarkan aku mencicipi kembali kenikmatan informasi yang brutal ini melalui dirimu! Setelah itu, aku akan mengujimu.
+
+set Global.guru_sejarah_memberi_tugas = true
+
+=> END

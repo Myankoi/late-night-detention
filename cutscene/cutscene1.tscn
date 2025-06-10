@@ -1,0 +1,61 @@
+[gd_scene load_steps=5 format=3 uid="uid://dhwyatp7odgdg"]
+
+[ext_resource type="Script" uid="uid://ck6swr8lpmggd" path="res://cutscene/cutscene_1.gd" id="1_su23y"]
+[ext_resource type="Texture2D" uid="uid://dbf4vjymaryx1" path="res://cutscene/1.jpg" id="1_vhkbt"]
+[ext_resource type="StyleBox" uid="uid://bxpypx4um61m" path="res://scene/main_memu.tres" id="3_e7mnj"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_su23y"]
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+expand_margin_left = 16.0
+expand_margin_top = 16.0
+expand_margin_right = 16.0
+expand_margin_bottom = 16.0
+
+[node name="Cutscene1" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_su23y")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+follow_viewport_enabled = true
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer"]
+texture_filter = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 128.0
+offset_bottom = 72.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.899969, 0.908833)
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("1_vhkbt")
+metadata/_edit_use_anchors_ = true
+
+[node name="play" type="Button" parent="CanvasLayer"]
+z_index = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -97.0
+offset_top = -75.0
+offset_right = -37.0
+offset_bottom = -39.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_font_sizes/font_size = 26
+theme_override_styles/hover_pressed = ExtResource("3_e7mnj")
+theme_override_styles/hover = ExtResource("3_e7mnj")
+theme_override_styles/pressed = ExtResource("3_e7mnj")
+theme_override_styles/normal = SubResource("StyleBoxFlat_su23y")
+text = "Next
+"
+
+[connection signal="pressed" from="CanvasLayer/play" to="." method="_on_play_pressed"]

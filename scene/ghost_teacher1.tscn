@@ -1,0 +1,66 @@
+[gd_scene load_steps=9 format=3 uid="uid://dhmvujh2qomuh"]
+
+[ext_resource type="Script" uid="uid://4aawyths3opp" path="res://scene/ghost_teacher_1.gd" id="1_r736h"]
+[ext_resource type="Texture2D" uid="uid://cplthciblpntw" path="res://chara/Guru 1.png" id="2_dusea"]
+[ext_resource type="Texture2D" uid="uid://dewda2t0716p2" path="res://chara/Guru 2.png" id="3_3jgko"]
+[ext_resource type="Texture2D" uid="uid://cyhac6lea2nrl" path="res://chara/Guru 3.png" id="4_jswvn"]
+[ext_resource type="PackedScene" uid="uid://lbh25pej6t0o" path="res://interaction/interaction_area/interaction_area.tscn" id="5_2ru8l"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_tx5iq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_dusea")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_3jgko")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_jswvn")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_crkil"]
+size = Vector2(20, 25)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_hl15k"]
+radius = 46.0109
+
+[node name="GhostTeacher" type="CharacterBody2D"]
+script = ExtResource("1_r736h")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+scale = Vector2(1.4375, 1.625)
+sprite_frames = SubResource("SpriteFrames_tx5iq")
+autoplay = "default"
+metadata/_aseprite_wizard_interface_config_ = {
+"pending_changes": {}
+}
+metadata/_aseprite_wizard_config_ = {
+"embed_tex": true,
+"layers": [],
+"o_ex_p": "",
+"o_folder": "",
+"o_name": "",
+"only_visible": false,
+"should_round_fps": true,
+"slice": "",
+"source": "res://chara/mc-walk-side (1).aseprite",
+"source_uid": 3212382751086573154
+}
+metadata/_aseprite_wizard_source_file_hash_ = "1f1160f4e960b6e5849fcd7a0a6a924c"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_crkil")
+
+[node name="InteractionArea" parent="." instance=ExtResource("5_2ru8l")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionArea"]
+shape = SubResource("CircleShape2D_hl15k")
+
+[connection signal="body_entered" from="InteractionArea" to="InteractionArea" method="_on_body_entered"]
+[connection signal="body_exited" from="InteractionArea" to="InteractionArea" method="_on_body_exited"]

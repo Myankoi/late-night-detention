@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://daglj4830288i"
+path="res://.godot/imported/dapatkuncidialogue.dialogue-d3041fdd90a2992ea039085feb73b968.tres"
+
+[deps]
+
+source_file="res://dialogue/dapatkuncidialogue.dialogue"
+dest_files=["res://.godot/imported/dapatkuncidialogue.dialogue-d3041fdd90a2992ea039085feb73b968.tres"]
+
+[params]
+
+defaults=true

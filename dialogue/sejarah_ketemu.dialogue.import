@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://c2k5cwhhdrgui"
+path="res://.godot/imported/sejarah_ketemu.dialogue-df8bfe5f168e1b0de4d8ca5b7ed4498e.tres"
+
+[deps]
+
+source_file="res://dialogue/sejarah_ketemu.dialogue"
+dest_files=["res://.godot/imported/sejarah_ketemu.dialogue-df8bfe5f168e1b0de4d8ca5b7ed4498e.tres"]
+
+[params]
+
+defaults=true

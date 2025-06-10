@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://ds1t3v10x7iw0"
+path="res://.godot/imported/quiz_ppkn.dialogue-05135ec18747e1494faaddf8b1e0385e.tres"
+
+[deps]
+
+source_file="res://dialogue/quiz_ppkn.dialogue"
+dest_files=["res://.godot/imported/quiz_ppkn.dialogue-05135ec18747e1494faaddf8b1e0385e.tres"]
+
+[params]
+
+defaults=true

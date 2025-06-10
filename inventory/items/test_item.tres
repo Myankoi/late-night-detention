@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="InvItem" load_steps=3 format=3 uid="uid://c3s5xe2s53mew"]
+
+[ext_resource type="Script" uid="uid://strok17loaj8" path="res://inventory/inventory_item.gd" id="1_ihhww"]
+[ext_resource type="Texture2D" uid="uid://cx1e8yq4gec7p" path="res://Asset/object/book3.png" id="2_gw3rl"]
+
+[resource]
+script = ExtResource("1_ihhww")
+name = "Godot"
+texture = ExtResource("2_gw3rl")
+metadata/_custom_type_script = "uid://strok17loaj8"

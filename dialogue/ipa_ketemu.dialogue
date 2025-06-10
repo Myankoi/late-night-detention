@@ -1,0 +1,4 @@
+~ start
+"Spesimen Serangga Alpha" ditambahkan ke inventory Liam.
+set Global.ipa_item = true
+=> END

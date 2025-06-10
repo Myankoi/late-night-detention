@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://bbnnxeg8pygkg"
+path="res://.godot/imported/ipa_belomketemu.dialogue-02709f64df02568f2e8d2c660ada5a91.tres"
+
+[deps]
+
+source_file="res://dialogue/ipa_belomketemu.dialogue"
+dest_files=["res://.godot/imported/ipa_belomketemu.dialogue-02709f64df02568f2e8d2c660ada5a91.tres"]
+
+[params]
+
+defaults=true

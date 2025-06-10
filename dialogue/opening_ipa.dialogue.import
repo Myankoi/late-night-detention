@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://dag4wh12joan2"
+path="res://.godot/imported/opening_ipa.dialogue-9d3741c5fdedec3035144a2172c95828.tres"
+
+[deps]
+
+source_file="res://dialogue/opening_ipa.dialogue"
+dest_files=["res://.godot/imported/opening_ipa.dialogue-9d3741c5fdedec3035144a2172c95828.tres"]
+
+[params]
+
+defaults=true

@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://bf1k76jgqopyk"
+path="res://.godot/imported/sejarah_belomketemu.dialogue-ffae290428ca9d3ee4f26b507bf47a74.tres"
+
+[deps]
+
+source_file="res://dialogue/sejarah_belomketemu.dialogue"
+dest_files=["res://.godot/imported/sejarah_belomketemu.dialogue-ffae290428ca9d3ee4f26b507bf47a74.tres"]
+
+[params]
+
+defaults=true

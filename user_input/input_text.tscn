@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://0qd383v6gh7e"]
+
+[ext_resource type="Script" uid="uid://b2kvprg1ybi5" path="res://user_input/input_text.gd" id="1_xeiq5"]
+
+[node name="InputText" type="Node2D"]
+script = ExtResource("1_xeiq5")
+
+[node name="LineEdit" type="LineEdit" parent="."]
+offset_right = 319.0
+offset_bottom = 63.0
+placeholder_text = "Code"
+max_length = 4
+
+[connection signal="text_submitted" from="LineEdit" to="." method="_on_LineEdit_Text_Entered"]

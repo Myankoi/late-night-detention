@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://cgn114k1i21l4"
+path="res://.godot/imported/materippkn.dialogue-ab8beafe05928406b7afabae423bee49.tres"
+
+[deps]
+
+source_file="res://dialogue/materippkn.dialogue"
+dest_files=["res://.godot/imported/materippkn.dialogue-ab8beafe05928406b7afabae423bee49.tres"]
+
+[params]
+
+defaults=true

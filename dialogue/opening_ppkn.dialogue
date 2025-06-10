@@ -1,0 +1,11 @@
+~ start
+
+Anomali Hantu Setengah Pancasila: SI... siswa? Bagaimana kau... bisa berada di zona ini...
+Anomali Hantu Setengah Pancasila: Aku... aku mati di sini! gara gara siswa tidak memakai topi saat upacara
+Anomali Hantu Setengah Pancasila: Jika kau ingin melintas, kau harus menunjukkan... komitmenmu pada keteraturan!
+Anomali Hantu Setengah Pancasila: Pergilah ke ruang gudang. Temukan "Atribut Kedisiplinan yang Terlupakan" itu adalah lencana kedisiplinan kepala sekolah lama yang menyimpan esensi kepatuhan.
+Anomali Hantu Setengah Pancasila: Bawa benda itu kemari. Aku akan mengujimu tentang hak dan kewajiban. Buktikan kau adalah SDM yang kayaknya tinggi, bukan SDM hama!
+
+set Global.guru_ppkn_memberi_tugas = true
+
+=> END

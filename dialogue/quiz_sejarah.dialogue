@@ -1,0 +1,73 @@
+~ start
+
+Anomali Hantu Yang Suka Mengenang Masa Lalu: Hohoho… kamu ingin masuk ke ruang guru?
+Anomali Hantu Yang Suka Mengenang Masa Lalu: Kau takkan bisa masuk sampai bisa menjawab teka-teki masa lalu…
+Anomali Hantu Yang Suka Mengenang Masa Lalu: Jawab 3 pertanyaan ini.
+Anomali Hantu Yang Suka Mengenang Masa Lalu: Salah satu saja… dan sejarah akan menulismu sebagai pecundang!
+=> question1
+=> question2
+=> question3
+
+~ question1
+# PERTANYAAN 1
+Anomali Hantu Yang Suka Mengenang Masa Lalu: Pertanyaan pertama!
+Anomali Hantu Yang Suka Mengenang Masa Lalu: Siapa yang membacakan teks Proklamasi Kemerdekaan Indonesia?
+- Soekarno
+	 Anomali Hantu Yang Suka Mengenang Masa Lalu: Benar! Bung Karno yang membacakannya!
+- Hatta
+	Anomali Hantu Yang Suka Mengenang Masa Lalu: [[lah! Itu Hatta, bukan pembaca. Kau ini kurang baca buku sejarah ya?!]]
+	set Global.health -= 1
+	=> question1
+- Tan Malaka
+	Anomali Hantu Yang Suka Mengenang Masa Lalu: [[lah besar! Kau pikir ini pelajaran konspirasi? Keluar dari kelas!]]
+	set Global.health -= 1
+	=> question1
+- Sjahrir
+	Anomali Hantu Yang Suka Mengenang Masa Lalu: [[AH?! Sjahrir? Aku menangis di alam baka... Keluar!]]
+	set Global.health -= 1
+	=> question1
+
+~ question2
+# PERTANYAAN 2
+Anomali Hantu Yang Suka Mengenang Masa Lalu: Pertanyaan kedua!
+Anomali Hantu Yang Suka Mengenang Masa Lalu: Kapan Sumpah Pemuda diikrarkan?
+- 1945
+	Anomali Hantu Yang Suka Mengenang Masa Lalu: [[Salah! Itu tahun kemerdekaan, bukan sumpah. Dasar anak kurang literasi!]]
+	set Global.health -= 1
+	=> question2
+- 1928
+	Anomali Hantu Yang Suka Mengenang Masa Lalu: [[Tepat! 28 Oktober 1928. Masih ada harapan untukmu rupanya.]]
+- 1950
+	Anomali Hantu Yang Suka Mengenang Masa Lalu: Salah! Kalau begini caramu belajar, lulus pun cuma mimpi!
+	set Global.health -= 1
+	=> question2
+- 1935
+	Anomali Hantu Yang Suka Mengenang Masa Lalu: [[Salah. Bahkan nenekku yang sudah wafat tahu jawabannya. Kau malu-maluin!]]
+	set Global.health -= 1
+	=> question2
+
+~ question3
+
+# PERTANYAAN 3
+Anomali Hantu Yang Suka Mengenang Masa Lalu: Pertanyaan terakhir!
+Anomali Hantu Yang Suka Mengenang Masa Lalu: Apa tugas utama BPUPKI?
+- Menyusun APBN
+	Anomali Hantu Yang Suka Mengenang Masa Lalu: Astaga naga! Itu kerjaan DPR! Kamu pikir BPUPKI tukang keuangan?!
+	set Global.health -= 1
+	=> question3
+- Merancang dasar negara
+	Anomali Hantu Yang Suka Mengenang Masa Lalu: Betul! Akhirnya kau berpikir juga rupanya...
+	set Global.guru_sejarah_selesai = true
+- Mengatur pendidikan
+	Anomali Hantu Yang Suka Mengenang Masa Lalu: Salah! Salah jurusan kamu kayaknya!
+	set Global.health -= 1
+	=> question3
+- Membentuk tentara
+	Anomali Hantu Yang Suka Mengenang Masa Lalu: Bukan itu! Apa BPUPKI isinya jenderal semua?! Pulang gih!
+	set Global.health -= 1
+	=> question3
+	
+Anomali Hantu Yang Suka Mengenang Masa Lalu: Hohoho… kamu telah melewati ujian masa lalu.
+Anomali Hantu Yang Suka Mengenang Masa Lalu: Masuklah… dan hormati sejarah, sebelum aku ubah nilai PKN-mu jadi 0!
+
+=> END

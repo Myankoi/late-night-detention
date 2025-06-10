@@ -1,0 +1,65 @@
+[gd_scene load_steps=5 format=3 uid="uid://bxyx1mkcrbuoc"]
+
+[ext_resource type="Script" uid="uid://crqogmmql0tyg" path="res://scene/game_over.gd" id="1_bc2bx"]
+[ext_resource type="Texture2D" uid="uid://crhcpxm2r0nyq" path="res://cutscene/gameover.jpeg" id="2_6pabp"]
+[ext_resource type="StyleBox" uid="uid://bxpypx4um61m" path="res://scene/main_memu.tres" id="2_bc2bx"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6pabp"]
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+expand_margin_left = 16.0
+expand_margin_top = 16.0
+expand_margin_right = 16.0
+expand_margin_bottom = 16.0
+
+[node name="GameOver" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_bc2bx")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+follow_viewport_enabled = true
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer"]
+texture_filter = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 128.0
+offset_bottom = 72.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.899969, 0.908833)
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("2_6pabp")
+metadata/_edit_use_anchors_ = true
+
+[node name="play" type="Button" parent="CanvasLayer"]
+z_index = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -137.0
+offset_top = -93.0
+offset_right = 122.0
+offset_bottom = -57.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 26
+theme_override_styles/hover_pressed = ExtResource("2_bc2bx")
+theme_override_styles/hover = ExtResource("2_bc2bx")
+theme_override_styles/pressed = ExtResource("2_bc2bx")
+theme_override_styles/normal = SubResource("StyleBoxFlat_6pabp")
+text = "Back To Main Screen"
+metadata/_edit_use_anchors_ = true
+
+[connection signal="pressed" from="CanvasLayer/play" to="." method="_on_play_pressed"]

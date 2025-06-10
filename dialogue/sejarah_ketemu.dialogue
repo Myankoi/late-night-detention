@@ -1,0 +1,12 @@
+~ start
+Liam: Hmm, ada buku Sejarah disini.
+* Proklamasi kemerdekaan dilakukan pada 17 Agustus 1945 oleh Soekarno dan Hatta.
+* BPUPKI dibentuk untuk merancang dasar negara.
+* Tokoh-tokoh perjuangan, Soekarno, Hatta, Sutan Sjahrir, Tan Malaka, dll.
+* Peristiwa penting, Sumpah Pemuda 1928, PPKI, dan Serangan Umum 1 Maret 1949.
+Liam: Hah? Apa ini?
+Liam: Buku ini... ada sesuatu di dalamnya. Sebuah pena?
+Liam: Ini Pena Sejarah yang dimaksud hantu tadi! Kok bisa ada di sini?
+Pena Sejarah ditambahkan ke inventory Liam.
+set Global.sejarah_item = true
+=> END

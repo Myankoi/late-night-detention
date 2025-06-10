@@ -1,0 +1,11 @@
+~ start
+
+Anomali Hantu Penggila Eksperimen: Kau... kau! Makhluk hidup! Bagaimana kau..
+Anomali Hantu Penggila Eksperimen: (matanya membesar aneh) Aku... aku mati di sini, Jiwaku terkunci, bersama eksperimen yang tak pernah kutuntaskan... eksperimen abadi!
+Anomali Hantu Penggila Eksperimen: Energi hidupmu... begitu pekat... menarik! Mungkin kau adalah orang yang kucari!
+Anomali Hantu Penggila Eksperimen: Jika kau ingin melangkah lebih jauh di koridor ilmiah ini, bantu aku! Temukan "Spesimen Serangga Alpha" yang hilang di depan UKS.
+Anomali Hantu Penggila Eksperimen: Spesimen itu... bisa evolusi jadi ambatron, yang bisa melengkapi eksperimenku! Bawa padaku, dan aku akan mengujimu tentang hukum-hukum kehidupan yang kau miliki.
+
+set Global.guru_ipa_memberi_tugas = true
+
+=> END

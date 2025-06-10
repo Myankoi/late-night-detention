@@ -1,0 +1,81 @@
+[gd_scene load_steps=10 format=4 uid="uid://dr40dr0upbh0i"]
+
+[ext_resource type="PackedScene" uid="uid://lbh25pej6t0o" path="res://interaction/interaction_area/interaction_area.tscn" id="1_5y1r4"]
+[ext_resource type="Script" uid="uid://bu521wqww213d" path="res://scene/hantu_ppkn.gd" id="1_kyv5a"]
+
+[sub_resource type="PortableCompressedTexture2D" id="PortableCompressedTexture2D_kyv5a"]
+_data = PackedByteArray("AAADAAUAAAABAAAAQAAAAEAAAAD0AQAAUklGRuwBAABXRUJQVlA4TOABAAAvP8APEPfAIACAJHT3AIbwiOccaIwbaiPZSv7HIXILIaL/smhBFUeSlCzuEhxF/h9icJn/AAAAMCRPsiDYLDXrB4YcjTAOUw4R6peLpgn325kPk8LHAo/XNUxbzTjD3MMP8P/vvK2frvbKu2A6oYQiD4Bs23bbNuIxINKI6N7JkP//nSopg+lPEf1n4LZtI7m3z4VuvCL8TQcRCSICPl4iOZuJmeUs4uKVzSylZGZv2cOLbJZWMcs4eKmlpDqhKZk6eAVUFdGkoqoEB68AtCYqDQguXmHTeHV50TfBx4snfREKLl5cbjcWKaXi4MVwuvCgNQq1Djh4HQce1wOUWhnaF73u1/13vM7vXA+17upE7w5eAVhpFeCLc+2/5xWIlFmsEAk+XmNkkTi6eY0xQozjz+oVAFY9L6/tlkXPzSvAqvd9r//VQUSCiIAPIjmbiZnlLOJCNrOUkpm9ZQ/IZmkVs4wDaimpTmhKpgSPoYpoUlFVfJrQmqg0vIph03h1edE3Xr/dk74IBZ/lcruxSCkVt6VNgVIdBsPpAg8W56h14IdzHOBxPSzPMrQfz/kdrodad3Wmd4dDYLUUwOXGGCnzKEScphoji8SR4MQYI8Q4ehEAVj0vtltWPbfBqvcvlQA=")
+size_override = Vector2(64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qvy5c"]
+atlas = SubResource("PortableCompressedTexture2D_kyv5a")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qsdp2"]
+atlas = SubResource("PortableCompressedTexture2D_kyv5a")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hb3ov"]
+atlas = SubResource("PortableCompressedTexture2D_kyv5a")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_6ybbq"]
+animations = [{
+"frames": [{
+"duration": 1.66667,
+"texture": SubResource("AtlasTexture_qvy5c")
+}, {
+"duration": 1.66667,
+"texture": SubResource("AtlasTexture_qsdp2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hb3ov")
+}],
+"loop": true,
+"name": &"default",
+"speed": 7.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bjw0h"]
+size = Vector2(20, 25)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_6j7jl"]
+radius = 46.0109
+
+[node name="hantu3" type="CharacterBody2D"]
+script = ExtResource("1_kyv5a")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+scale = Vector2(1.4375, 1.625)
+sprite_frames = SubResource("SpriteFrames_6ybbq")
+autoplay = "default"
+metadata/_aseprite_wizard_interface_config_ = {
+"pending_changes": {
+"source": "res://chara/mc-walk-side (1).aseprite"
+}
+}
+metadata/_aseprite_wizard_config_ = {
+"embed_tex": true,
+"layers": [],
+"o_ex_p": "",
+"o_folder": "",
+"o_name": "",
+"only_visible": false,
+"should_round_fps": true,
+"slice": "",
+"source": "D:/Download/guru setan 3.aseprite",
+"source_uid": 3212382751086573154
+}
+metadata/_aseprite_wizard_source_file_hash_ = "97d5d619ac11d62d159a345402d43059"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_bjw0h")
+
+[node name="InteractionArea" parent="." instance=ExtResource("1_5y1r4")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionArea"]
+shape = SubResource("CircleShape2D_6j7jl")
+
+[connection signal="body_entered" from="InteractionArea" to="InteractionArea" method="_on_body_entered"]
+[connection signal="body_exited" from="InteractionArea" to="InteractionArea" method="_on_body_exited"]

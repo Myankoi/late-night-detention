@@ -1,0 +1,149 @@
+[gd_scene load_steps=13 format=3 uid="uid://bygh3gpuqjdgs"]
+
+[ext_resource type="Script" uid="uid://bqc8c3n32bna2" path="res://scene/main_memu.gd" id="1_ebir6"]
+[ext_resource type="Texture2D" uid="uid://bh25b0mum6m41" path="res://cutscene/2.jpg" id="1_ul448"]
+[ext_resource type="Texture2D" uid="uid://dbf4vjymaryx1" path="res://cutscene/1.jpg" id="2_ebnuy"]
+[ext_resource type="Texture2D" uid="uid://cyuqogciymme4" path="res://cutscene/3.jpg" id="3_ebir6"]
+[ext_resource type="Texture2D" uid="uid://biq0h50rnque8" path="res://cutscene/4.jpg" id="4_fln4t"]
+[ext_resource type="Texture2D" uid="uid://dhdx1b7gxdsdp" path="res://cutscene/5.jpg" id="5_uidsf"]
+[ext_resource type="Texture2D" uid="uid://vr2t04yddhhb" path="res://cutscene/6.jpg" id="6_1ew0r"]
+[ext_resource type="StyleBox" uid="uid://bxpypx4um61m" path="res://scene/main_memu.tres" id="8_emk4q"]
+[ext_resource type="Script" uid="uid://d2n0mmkq1s3tb" path="res://addons/splash_screen_wizard/splash_screen.gd" id="8_fln4t"]
+[ext_resource type="PackedScene" uid="uid://cxqpgg8ax8bqv" path="res://splash_screen/slides/slide_logo.tscn" id="9_uidsf"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ebir6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_ul448")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_ebnuy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_fln4t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_ebir6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_uidsf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_1ew0r")
+}],
+"loop": true,
+"name": &"menu",
+"speed": 5.0
+}]
+
+[sub_resource type="SystemFont" id="SystemFont_5thlx"]
+font_names = PackedStringArray("Comic Sans MS")
+font_italic = true
+font_weight = 700
+hinting = 0
+
+[node name="main memu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ebir6")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.896094, 0.904167)
+sprite_frames = SubResource("SpriteFrames_ebir6")
+animation = &"menu"
+frame_progress = 0.737788
+centered = false
+
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
+color = Color(0.733005, 0.733005, 0.733005, 1)
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/separation = 58
+alignment = 1
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer"]
+texture_filter = 1
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = SubResource("SystemFont_5thlx")
+theme_override_font_sizes/font_size = 64
+text = "Late Night Detention"
+
+[node name="play" type="Button" parent="MarginContainer/VBoxContainer"]
+z_index = 1
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+theme_override_styles/hover_pressed = ExtResource("8_emk4q")
+theme_override_styles/hover = ExtResource("8_emk4q")
+theme_override_styles/pressed = ExtResource("8_emk4q")
+theme_override_styles/normal = ExtResource("8_emk4q")
+text = "Play"
+
+[node name="about" type="Button" parent="MarginContainer/VBoxContainer"]
+z_index = 1
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+theme_override_styles/hover_pressed = ExtResource("8_emk4q")
+theme_override_styles/hover = ExtResource("8_emk4q")
+theme_override_styles/pressed = ExtResource("8_emk4q")
+theme_override_styles/normal = ExtResource("8_emk4q")
+text = "About"
+
+[node name="quit" type="Button" parent="MarginContainer/VBoxContainer"]
+z_index = 1
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+theme_override_styles/hover_pressed = ExtResource("8_emk4q")
+theme_override_styles/hover = ExtResource("8_emk4q")
+theme_override_styles/pressed = ExtResource("8_emk4q")
+theme_override_styles/normal = ExtResource("8_emk4q")
+text = "Quit"
+
+[node name="SplashScreen" type="Control" parent="."]
+z_index = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("8_fln4t")
+skip_input_action = &"ui_accept"
+metadata/_custom_type_script = "uid://d2n0mmkq1s3tb"
+
+[node name="ColorRect" type="ColorRect" parent="SplashScreen"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="SlideLogo" parent="SplashScreen" instance=ExtResource("9_uidsf")]
+layout_mode = 1
+transition_in = null
+transition_out = null
+duration = 5.0
+skippable = true
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/about" to="." method="_on_option_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/quit" to="." method="_on_quit_pressed"]

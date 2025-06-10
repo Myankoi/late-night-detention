@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://0h34761iijoc"
+path="res://.godot/imported/quiz_ipa.dialogue-4a180f7764a2ee279a788aa46f8f21d8.tres"
+
+[deps]
+
+source_file="res://dialogue/quiz_ipa.dialogue"
+dest_files=["res://.godot/imported/quiz_ipa.dialogue-4a180f7764a2ee279a788aa46f8f21d8.tres"]
+
+[params]
+
+defaults=true

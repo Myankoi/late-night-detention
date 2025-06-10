@@ -1,0 +1,70 @@
+~ start
+
+Anomali Hantu Penggila Eksperimen: Bagus kamu menemukan "Spesimen Serangga Alpha" yang hilang.
+Anomali Hantu Penggila Eksperimen: Tapi kau harus menjawab pertanyaan ku dulu sebelum bisa masuk.
+=> kuis_ipa_1
+=> kuis_ipa_2
+=> kuis_ipa_3
+
+~ kuis_ipa_1
+# PERTANYAAN 1 - Sistem Pernapasan
+Anomali Hantu Penggila Eksperimen: Pertanyaan pertama, dasar sains!
+Anomali Hantu Penggila Eksperimen: Proses difusi gas, yaitu pertukaran Oksigen (O2) dan Karbon Dioksida (CO2) antara udara dan darah, secara spesifik terjadi di bagian mana dari paru-paru?
+- Jantung
+	Anomali Hantu Penggila Eksperimen: [[Hahaha! Jantung itu memompa darah, bukan menukar gas! Jawaban salah!]]
+	set Global.health -= 1
+	=> kuis_ipa_1
+- Usus halus
+	Anomali Hantu Penggila Eksperimen: [[Usus halus? Itu untuk nutrisi, bukan pernapasan! Otakmu di mana, bocah?!]]
+	set Global.health -= 1
+	=> kuis_ipa_1
+- Alveolus
+	Anomali Hantu Penggila Eksperimen: [[Tepat sekali! Gelembung kecil bernama alveolus. Pengetahuanmu lumayan juga.]]
+- Bronkus
+	Anomali Hantu Penggila Eksperimen: [[Bronkus itu saluran udara, bukan tempat pertukaran gas. Kurang tepat!]]
+	set Global.health -= 1
+	=> kuis_ipa_1
+
+~ kuis_ipa_2
+# PERTANYAAN 2 - Sistem Pencernaan
+Anomali Hantu Penggila Eksperimen: Lanjut ke pertanyaan kedua, tentang efisiensi tubuhmu!
+Anomali Hantu Penggila Eksperimen: Setelah proses pencernaan mekanik dan kimiawi di lambung, sebagian besar penyerapan sari-sari makanan dan nutrisi terjadi pada struktur spesifik mana dalam usus halus?
+- Duodenum
+	Anomali Hantu Penggila Eksperimen: [[Duodenum itu awal usus halus, tempat pencernaan kimiawi lanjut, bukan penyerapan utama!]]
+	set Global.health -= 1
+	=> kuis_ipa_2
+- Jejunum
+	Anomali Hantu Penggila Eksperimen: [[Benar! Jejunum adalah bagian utama penyerapan nutrisi. Kau tidak seburuk yang kuduga.]]
+- Kolon
+	Anomali Hantu Penggila Eksperimen: [[Kolon itu usus besar, untuk penyerapan air, bukan sari makanan! Belajarlah lagi!]]
+	set Global.health -= 1
+	=> kuis_ipa_2
+- Rektum
+	Anomali Hantu Penggila Eksperimen: [[Rektum?! Itu tempat penyimpanan sisa akhir! Kau mau jadi ilmuwan macam apa?!]]
+	set Global.health -= 1
+	=> kuis_ipa_2
+
+~ kuis_ipa_3
+# PERTANYAN 3 - Sistem Indra (Keseimbangan)
+Anomali Hantu Penggila Eksperimen: Pertanyaan terakhir, tentang bagaimana kau tetap berdiri!
+Anomali Hantu Penggila Eksperimen: Bagian dari telinga yang secara primer bertanggung jawab atas sensasi keseimbangan statis dan dinamis tubuh adalah…
+- Koklea
+	Anomali Hantu Penggila Eksperimen: [[Koklea itu untuk pendengaran! Bukan keseimbangan!]]
+	set Global.health -= 1
+	=> kuis_ipa_3
+- Gendang Telinga
+	Anomali Hantu Penggila Eksperimen: [[Gendang telinga menerima suara. Tidak ada hubungannya dengan keseimbangan!]]
+	set Global.health -= 1
+	=> kuis_ipa_3
+- Saluran Setengah Lingkaran (Semicircular Canals)
+	Anomali Hantu Penggila Eksperimen: [[Tepat! Saluran setengah lingkaran dan vestibulum. Kau memang punya otak!]]
+	set Global.ipa_lab_unlocked = true
+- Daun Telinga
+	Anomali Hantu Penggila Eksperimen: [[Daun telinga itu hanya bagian luar! Kau ini, benar-benar tidak paham anatomi!]]
+	set Global.health -= 1
+	=> kuis_ipa_3
+
+Anomali Hantu Penggila Eksperimen: kau lumayan juga.
+Anomali Hantu Penggila Eksperimen: Kunci gerbang berada di berangkas kepala sekolah, ingat itu!
+
+=> END

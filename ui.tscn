@@ -1,0 +1,86 @@
+[gd_scene load_steps=4 format=3 uid="uid://bmh7xnqbo1coh"]
+
+[ext_resource type="Script" uid="uid://d2n0mmkq1s3tb" path="res://addons/splash_screen_wizard/splash_screen.gd" id="1_nltto"]
+[ext_resource type="PackedScene" uid="uid://cxqpgg8ax8bqv" path="res://splash_screen/slides/slide_logo.tscn" id="2_m6e0p"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_nltto"]
+font_size = 56
+
+[node name="UI" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MainMenu" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CenterContainer" type="CenterContainer" parent="MainMenu"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MainMenu/CenterContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="Label" type="Label" parent="MainMenu/CenterContainer/VBoxContainer"]
+custom_minimum_size = Vector2(1000, 0)
+layout_mode = 2
+text = "awuuuuuuuu
+awu"
+label_settings = SubResource("LabelSettings_nltto")
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="Button" type="Button" parent="MainMenu/CenterContainer/VBoxContainer"]
+layout_mode = 2
+text = "New Game"
+
+[node name="Button2" type="Button" parent="MainMenu/CenterContainer/VBoxContainer"]
+layout_mode = 2
+text = "Continue"
+
+[node name="Button3" type="Button" parent="MainMenu/CenterContainer/VBoxContainer"]
+layout_mode = 2
+text = "AU"
+
+[node name="SplashScreen" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_nltto")
+delay_between_slides = 0.0
+skip_input_action = &"ui_accept"
+metadata/_custom_type_script = "uid://d2n0mmkq1s3tb"
+
+[node name="CanvasModulate" type="CanvasModulate" parent="SplashScreen"]
+scale = Vector2(100, 100)
+
+[node name="ColorRect" type="ColorRect" parent="SplashScreen"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.099986, 0.099986, 0.099986, 1)
+
+[node name="SlideLogo" parent="SplashScreen" instance=ExtResource("2_m6e0p")]
+layout_mode = 1
+transition_in = null
+transition_out = null
+skippable = true

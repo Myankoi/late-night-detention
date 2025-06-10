@@ -1,0 +1,70 @@
+~ start
+
+Anomali Hantu Setengah Pancasila: Bagus kau menemuka topi ku...
+Anomali Hantu Setengah Pancasila: Uji dirimu… jika ingin memasuki toilet ini!
+=> kuis_ppkn_1
+=> kuis_ppkn_2
+=> kuis_ppkn_3
+
+~ kuis_ppkn_1
+# PERTANYAAN 1 - Sila Pertama (Pancasila)
+Anomali Hantu Setengah Pancasila: Pertanyaan pertama! Jangan remehkan Pancasila!
+Anomali Hantu Setengah Pancasila: Frasa "Ketuhanan Yang Maha Esa" dalam sila pertama Pancasila, mengandung makna terkait…
+- Kebebasan beragama tanpa batasan
+	Anomali Hantu Setengah Pancasila: [[Bukan itu! Kebebasan ada, tapi harus dalam koridor moral! Jawaban salah!]]
+	set Global.health -= 1
+	=> kuis_ppkn_1
+- Pengakuan atas keberadaan Tuhan sebagai kausa prima
+	Anomali Hantu Setengah Pancasila: [[Tepat sekali! Kausa prima, pencipta alam semesta. Kau mengerti esensinya!]]
+- Negara harus memihak pada satu agama tertentu
+	Anomali Hantu Setengah Pancasila: [[Salah besar! Pancasila menjamin keberagaman, bukan memihak!]]
+	set Global.health -= 1
+	=> kuis_ppkn_1
+- Hak mutlak individu untuk tidak beragama
+	Anomali Hantu Setengah Pancasila: [[Itu menyimpang! Pancasila adalah dasar yang mengakui spiritualitas. Coba lagi!]]
+	set Global.health -= 1
+	=> kuis_ppkn_1
+
+~ kuis_ppkn_2
+# PERTANYAAN 2 - Hak Warga Negara (UUD 1945)
+Anomali Hantu Setengah Pancasila: Lanjut ke hak-hakmu sebagai warga negara, menurut UUD 1945!
+Anomali Hantu Setengah Pancasila: Selain hak untuk mendapatkan pendidikan, pasal berapakah dalam UUD 1945 yang secara spesifik menjamin hak warga negara untuk berserikat, berkumpul, dan mengeluarkan pendapat?
+- Pasal 27 Ayat (1)
+	Anomali Hantu Setengah Pancasila: [[Itu tentang kesamaan kedudukan di mata hukum. Salah!]]
+	set Global.health -= 1
+	=> kuis_ppkn_2
+- Pasal 28E Ayat (3)
+	Anomali Hantu Setengah Pancasila: [[Benar! Kebebasan berserikat, berkumpul, dan berpendapat. Memang anak pintar!]]
+- Pasal 30 Ayat (1)
+	Anomali Hantu Setengah Pancasila: [[Itu tentang hak dan kewajiban dalam pembelaan negara. Jauh sekali!]]
+	set Global.health -= 1
+	=> kuis_ppkn_2
+- Pasal 31 Ayat (1)
+	Anomali Hantu Setengah Pancasila: [[Itu tentang hak pendidikan. Meskipun benar hak, tapi bukan yang aku tanyakan!]]
+	set Global.health -= 1
+	=> kuis_ppkn_2
+
+~ kuis_ppkn_3
+# PERTANYAAN 3 - Musyawarah Mufakat (Demokrasi Pancasila)
+Anomali Hantu Setengah Pancasila: Pertanyaan terakhir, tentang pilar demokrasi kita!
+Anomali Hantu Setengah Pancasila: Musyawarah mufakat sebagai praktik demokrasi Pancasila, secara ideal mengedepankan…
+- Keputusan berdasarkan suara terbanyak mutlak
+	Anomali Hantu Setengah Pancasila: [[Mayoritas memang penting, tapi mufakat lebih dari sekadar hitungan suara!]]
+	set Global.health -= 1
+	=> kuis_ppkn_3
+- Dominasi pemikiran kelompok mayoritas
+	Anomali Hantu Setengah Pancasila: [[Bukan! Itu bisa mengarah pada tirani mayoritas. Keluar dari sini!]]
+	set Global.health -= 1
+	=> kuis_ppkn_3
+- Pencapaian kesepakatan melalui dialog dan konsensus
+	Anomali Hantu Setengah Pancasila: [[Tepat sekali! Dialog untuk mencapai konsensus, demi kepentingan bersama. Sangat mendalam!]]
+	set Global.toilet_unlocked = true 
+- Hak veto bagi perwakilan minoritas
+	Anomali Hantu Setengah Pancasila: [[Veto? Itu bukan ciri musyawarah mufakat kita! Pergi sana!]]
+	set Global.health -= 1
+	=> kuis_ppkn_3
+
+Anomali Hantu Setengah Pancasila: Baik, kamu boleh lewat.
+Anomali Hantu Setengah Pancasila: Tapi ingat, Pancasila itu untuk dihayati dan diamalkan, bukan hanya dihafalkan! Sekarang pergilah!
+
+=> END

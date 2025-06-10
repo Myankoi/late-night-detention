@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://dmft3d07np1dv"]
+
+[ext_resource type="Script" uid="uid://dtr3sk02efbrp" path="res://interaction/interaction_manager.gd" id="1_spka6"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_spka6"]
+font_size = 10
+
+[node name="InteractionManager" type="Node2D"]
+z_index = 5
+z_as_relative = false
+script = ExtResource("1_spka6")
+
+[node name="Label" type="Label" parent="."]
+z_index = 4096
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_right = 125.0
+offset_bottom = 23.0
+grow_horizontal = 2
+text = "[E] TO INTERACT"
+label_settings = SubResource("LabelSettings_spka6")
+horizontal_alignment = 1
+vertical_alignment = 1

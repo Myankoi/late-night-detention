@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://dhh3hlenhlvjp"
+path="res://.godot/imported/quiz_sejarah.dialogue-2175b3285457f4814cc8375471d15665.tres"
+
+[deps]
+
+source_file="res://dialogue/quiz_sejarah.dialogue"
+dest_files=["res://.godot/imported/quiz_sejarah.dialogue-2175b3285457f4814cc8375471d15665.tres"]
+
+[params]
+
+defaults=true

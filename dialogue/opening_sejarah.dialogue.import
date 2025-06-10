@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://w815mmb5vmhu"
+path="res://.godot/imported/opening_sejarah.dialogue-5ecef077c39e291ab40d356ea86802c1.tres"
+
+[deps]
+
+source_file="res://dialogue/opening_sejarah.dialogue"
+dest_files=["res://.godot/imported/opening_sejarah.dialogue-5ecef077c39e291ab40d356ea86802c1.tres"]
+
+[params]
+
+defaults=true

@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://bitdjow4id5ty"
+path="res://.godot/imported/materipa.dialogue-917234a369377f1e7cb92d316e41323d.tres"
+
+[deps]
+
+source_file="res://dialogue/materipa.dialogue"
+dest_files=["res://.godot/imported/materipa.dialogue-917234a369377f1e7cb92d316e41323d.tres"]
+
+[params]
+
+defaults=true

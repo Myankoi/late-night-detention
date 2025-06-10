@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://bovd18at0g2n8"
+path="res://.godot/imported/opening_ppkn.dialogue-f23b960343ebafb66f25ec95384ecbdd.tres"
+
+[deps]
+
+source_file="res://dialogue/opening_ppkn.dialogue"
+dest_files=["res://.godot/imported/opening_ppkn.dialogue-f23b960343ebafb66f25ec95384ecbdd.tres"]
+
+[params]
+
+defaults=true
